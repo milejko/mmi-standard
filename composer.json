@@ -1,5 +1,6 @@
 {
 	"name": "mmi/mmi-standard",
+	"description": "MMi Framework project - standard edition",
 	"require": {
 		"mmi/mmi": "~3.0.0"
 	},
