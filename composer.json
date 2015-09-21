@@ -9,7 +9,6 @@
 			"Mmi\\": "src/Mmi"
 		}
 	},
-	"minimum-stability": "dev",
 	"scripts": {
 		"post-update-cmd": "Mmi\\Command\\Composer::postUpdate",
 		"post-install-cmd": "Mmi\\Command\\Composer::postInstall"
