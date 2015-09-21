@@ -1,13 +1,15 @@
 {
 	"name": "mmi/mmi-standard",
+	"license": "MIT",
+	"type": "project",
 	"description": "MMi Framework project - standard edition",
-	"require": {
-		"mmi/mmi": "~3.0.0"
-	},
 	"autoload": {
 		"psr-4": {
 			"": "src/"
 		}
+	},
+	"require": {
+		"mmi/mmi": "~3.0.0"
 	},
 	"scripts": {
 		"post-update-cmd": "Mmi\\Command\\Composer::postUpdate",
