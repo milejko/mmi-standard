@@ -11,7 +11,6 @@
 	"require": {
 		"mmi/mmi": "~3.0.0"
 	},
-	"minimum-stability": "dev",
 	"scripts": {
 		"post-update-cmd": "Mmi\\Command\\ComposerInstaller::postUpdate",
 		"post-install-cmd": "Mmi\\Command\\ComposerInstaller::postInstall"
