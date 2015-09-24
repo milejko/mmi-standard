@@ -14,4 +14,4 @@ define('BASE_PATH', __DIR__ . '/../');
 require BASE_PATH . 'vendor/autoload.php';
 
 //uruchomienie aplikacji
-(new \Mmi\App\Kernel('\Mmi\App\Bootstrap'), 'DEV')->run();
+(new \Mmi\App\Kernel('\Mmi\App\Bootstrap', 'DEV'))->run();
