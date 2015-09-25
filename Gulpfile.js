@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var gutil = require('gulp-util');
 var exec = require('gulp-exec');
 var argv = require('yargs').argv;
-var env = 'DEV';
+var env = 'PROD';
 
 if (argv.e !== undefined) {
 	env = argv.e;
@@ -18,7 +18,7 @@ var reportOptions = {
 	stdout: true // default = true, false means don't write stdout 
 };
 
-gulp.task('default', ['dbdeploy', 'daorender'], function () {
+gulp.task('default', ['dbdeploy'], function () {
 });
 
 gulp.task('dbdeploy', function () {
