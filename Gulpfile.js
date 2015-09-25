@@ -1,12 +1,18 @@
 var gulp = require('gulp');
 var gutil = require('gulp-util');
 var exec = require('gulp-exec');
+var argv = require('yargs').argv;
+var env = 'DEV';
+
+if (argv.e !== undefined) {
+	env = argv.e;
+}
 
 gulp.task('dbdeploy', function () {
 	var options = {
 		continueOnError: false, // default = false, true means don't emit error event 
 		pipeStdout: false, // default = false, true means stdout is written to file.contents 
-		enviroment: 'PROD'
+		enviroment: env
 	};
 	var reportOptions = {
 		err: true, // default = true, false means don't write err 
