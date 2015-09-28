@@ -21,6 +21,10 @@ var reportOptions = {
 gulp.task('default', ['dbdeploy'], function () {
 });
 
+gulp.task('dev', function () {
+	env = 'DEV';
+});
+
 gulp.task('dbdeploy', function () {
 	gulp.src('.')
 			.pipe(exec('php vendor/mmi/mmi/src/Mmi/Command/DbDeploy.php <%= options.enviroment %>', options))
