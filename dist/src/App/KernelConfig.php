@@ -14,5 +14,14 @@ namespace App;
  * Ogólna konfiguracja aplikacji
  */
 class KernelConfig extends \Mmi\App\KernelConfig {
-	
+
+	/**
+	 * Konstruktor
+	 */
+	public function __construct() {
+		parent::__construct();
+		//logowanie błędów
+		$this->log->addInstance(\Mmi\Log\ConfigInstance::factory()->setLevelError());
+	}
+
 }
