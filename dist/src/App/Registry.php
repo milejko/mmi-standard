@@ -13,6 +13,6 @@ namespace App;
 /**
  * Rejestr aplikacji
  */
-class Registry extends \Mmi\App\Registry {
+class Registry extends \Mmi\App\KernelRegistry {
 
 }
