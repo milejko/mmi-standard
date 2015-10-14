@@ -15,5 +15,10 @@
 	"scripts": {
 		"post-update-cmd": "Mmi\\Command\\ComposerInstaller::postUpdate",
 		"post-install-cmd": "Mmi\\Command\\ComposerInstaller::postInstall"
+	},
+	"extra": {
+		"branch-alias": {
+			"dev-master": "1.1-dev"
+		}
 	}
 }
