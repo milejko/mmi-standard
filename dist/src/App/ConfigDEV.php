@@ -22,7 +22,7 @@ class ConfigDEV extends Config {
 		$this->compile = true;
 		$this->cache->active = false;
 		//logowanie debug
-		$this->log->addInstance(\Mmi\Log\ConfigInstance::factory()->setLevelDebug());
+		$this->log->addInstance((new \Mmi\Log\ConfigInstance)->setLevelDebug());
 	}
 
 }
