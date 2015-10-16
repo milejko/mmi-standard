@@ -16,10 +16,24 @@ namespace App;
 class Config extends \Mmi\App\KernelConfig {
 
 	/**
-	 * Konstruktor
+	 * Inicjalizacja konfiguracji
 	 */
 	public function __construct() {
-		parent::__construct();
+
+		//konfiguracja bufora
+		$this->cache = new \Mmi\Cache\CacheConfig;
+
+		//konfiguracja bazy danych
+		$this->db = new \Mmi\Db\DbConfig;
+
+		//ustawienia loggera
+		$this->log = new \Mmi\Log\LogConfig;
+
+		//ustawienia routera
+		$this->router = new \Mmi\Mvc\RouterConfig;
+
+		//konfiguracja sesji
+		$this->session = new \Mmi\Session\SessionConfig;
 	}
 
 }

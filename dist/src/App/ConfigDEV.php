@@ -16,11 +16,14 @@ namespace App;
 class ConfigDEV extends Config {
 
 	public function __construct() {
+
 		parent::__construct();
+
 		//domyślnie włączony debug i kompilacja + wyłączenie cache
 		$this->debug = true;
 		$this->compile = true;
 		$this->cache->active = false;
+
 		//logowanie debug
 		$this->log->addInstance((new \Mmi\Log\ConfigInstance)->setLevelDebug());
 	}
