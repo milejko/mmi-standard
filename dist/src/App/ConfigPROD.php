@@ -20,7 +20,7 @@ class ConfigPROD extends Config {
 		parent::__construct();
 
 		//logowanie błędów
-		$this->log->addInstance((new \Mmi\Log\ConfigInstance)->setLevelError());
+		$this->log->addInstance((new \Mmi\Log\LogConfigInstance)->setLevelError());
 	}
 
 }
