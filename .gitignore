@@ -1,4 +1,6 @@
+/bin/
 /nbproject/
 /var/
 /vendor/
-/web/
+/web/data/
+/web/resource/
