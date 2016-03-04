@@ -1,5 +1,5 @@
 {
-  "main": "Gulpfile.js",
+  "main": "gulpfile.js",
   "dependencies": {
     "gulp": "^3.9.0",
     "gulp-exec": "^2.1.1",
