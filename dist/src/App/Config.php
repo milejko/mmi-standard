@@ -20,6 +20,9 @@ class Config extends \Mmi\App\KernelConfig {
 	 */
 	public function __construct() {
 
+		//konfiguracja lokalnego bufora
+		$this->localCache = new \Mmi\Cache\CacheConfig;
+
 		//konfiguracja bufora
 		$this->cache = new \Mmi\Cache\CacheConfig;
 
