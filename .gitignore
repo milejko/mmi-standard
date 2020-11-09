@@ -4,3 +4,4 @@
 /vendor/
 /web/data
 /web/resource/
+.env
