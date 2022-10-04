@@ -9,7 +9,7 @@
 		}
 	},
 	"require": {
-		"mmi/mmi": "4.*"
+		"mmi/mmi": "*"
 	},
 	"scripts": {
 		"post-update-cmd": "Mmi\\App\\ComposerInstaller::postUpdate",
